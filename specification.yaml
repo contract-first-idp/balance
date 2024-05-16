@@ -7,4 +7,17 @@ info:
 servers:
   - url: "http://localhost:8080"
   - url: "https://microcks-microcks.apps.cluster-n7s8n.dynamic.redhatworkshops.io/rest/balance/0.0.1"
-paths: {}
+paths:
+    '/account/{id}': {}
+components:
+    schemas:
+        Balance:
+            title: Root Type for Balance
+            description: ''
+            type: object
+            properties:
+                total:
+                    format: int32
+                    type: integer
+            example:
+                total: 1234
