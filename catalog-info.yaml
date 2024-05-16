@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "balance"
+  title: "balance"
+  description: "Balance API"
+  annotations:
+    backstage.io/spectral-ruleset-url: https://raw.githubusercontent.com/contract-first-idp/spectral-rules/main/ruleset.yaml
+spec:
+  type: openapi
+  system: system:default/payments
+  owner: "group:default/backstage-admins"
+  lifecycle: experimental
+  definition:
+    $openapi: https://github.com/contract-first-idp/balance/blob/master/specification.yaml

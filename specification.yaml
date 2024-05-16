@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: balance
+  description: |-
+    Balance API
+  version: 0.0.1
+servers:
+  - url: "http://localhost:8080"
+  - url: "https://microcks-microcks.apps.cluster-n7s8n.dynamic.redhatworkshops.io/rest/balance/0.0.1"
+paths: {}
